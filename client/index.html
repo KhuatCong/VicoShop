@@ -1,11 +1,179 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/asset/css/style.css">
+    <link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/asset/slick/slick.css">
+    <link rel="stylesheet" href="/asset/slick/slick-theme.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Trang chủ</title>
 </head>
+
 <body>
-    
+    <header>
+        <div class="container">
+            <div class="header-shop">
+                <div class="header-logo">
+                    <a href="/client/index.html">
+                        <img src="/asset/img/logo/logo.png" alt="">
+                    </a>
+                </div>
+                <div class="header-search">
+                    <form action="">
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Tìm kiếm trên shop">
+                            <button type="submit" class="btn btn-info">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+                <div class="header-cart">
+                    <div class="header-user">
+                        <div class="action-user">
+                            <a href="" title="Đăng nhập">
+                                <i class="fa-solid fa-user" style="color: #ffffff;"></i>
+                                Đăng nhập
+                            </a>
+                        </div>
+                        <div class="list-action-user">
+                            <ul>
+                                <li><a href="">Đăng nhập</a></li>
+                                <li><a href="">Đăng ký</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="header-cart-info">
+                        <a href="" title="Giỏ hàng">
+                            <i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i>
+                            <span class="badge">0</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- slide banner -->
+    <div class="container mt-2">
+        <div class="slide-banner">
+            <img src="/asset/img/banner/banner1.jpg" alt="">
+        </div>
+    </div>
+    <!-- slide category -->
+    <div class="container mt-4">
+        <div class="list-category">
+            <div class="item-category">
+                <a href="">
+                    <div class="img">
+                        <img src="/asset/img/category/thoitrangnam.png" alt="">
+                    </div>
+                    <div class="name-category">
+                        Thời trang nam
+                    </div>
+                </a>
+            </div>
+            <div class="item-category">
+                <a href="">
+                    <div class="img">
+                        <img src="/asset/img/category/thoitrangnam.png" alt="">
+                    </div>
+                    <div class="name-category">
+                        Thời trang nam
+                    </div>
+                </a>
+            </div>
+            <div class="item-category">
+                <a href="">
+                    <div class="img">
+                        <img src="/asset/img/category/thoitrangnam.png" alt="">
+                    </div>
+                    <div class="name-category">
+                        Thời trang nam
+                    </div>
+                </a>
+            </div>
+            <div class="item-category">
+                <a href="">
+                    <div class="img">
+                        <img src="/asset/img/category/thoitrangnu.png" alt="">
+                    </div>
+                    <div class="name-category">
+                        Thời trang nữ
+                    </div>
+                </a>
+            </div>
+            <div class="item-category">
+                <a href="">
+                    <div class="img">
+                        <img src="/asset/img/category/thoitrangtreem.png" alt="">
+                    </div>
+                    <div class="name-category">
+                        Thời trang trẻ em
+                    </div>
+                </a>
+            </div>
+            <div class="item-category">
+                <a href="">
+                    <div class="img">
+                        <img src="/asset/img/category/phukien.png" alt="">
+                    </div>
+                    <div class="name-category">
+                        Phụ kiện thời trang
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- slide tin tức mới nhất -->
+    <div class="container mt-4">
+        <div class="slide-tintuc-home">
+            <div class="item-slide-tintuc">
+                <a href="">
+                    <img src="/asset/img/slide-tintuc/slide1.jpg" alt="">
+                </a>
+            </div>
+            <div class="item-slide-tintuc">
+                <a href="">
+                    <img src="/asset/img/slide-tintuc/slide2.jpg" alt="">
+                </a>
+            </div>
+            <div class="item-slide-tintuc">
+                <a href="">
+                    <img src="/asset/img/slide-tintuc/slide3.jpg" alt="">
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- sản phẩm bán chạy -->
+    <div class="container mt-4">
+        <div class="slide-sell-product-home">
+            <div class="d-flex justify-content-between">
+                <div class="title-sell-product">
+                    Sản phẩm bán chạy
+                </div>
+                <a class="" href="">Xem tất cả<i class="fa-solid fa-angle-right"></i></a>
+            </div>
+
+            <div class="item-product-sell">
+                <div class="img">
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="/bootstrap/js/bootstrap.min.js"></script>
+    <script src="/asset/js/main.js"></script>
+    <script src="/asset/slick/slick.min.js"></script>
 </body>
+
 </html>

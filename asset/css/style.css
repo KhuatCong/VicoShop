@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Roboto",sans-serif;
+    color: #27272a;
+    background-color: #f5f5f5 !important;
+}
+header {
+    background-color: #03A5F0;
+    padding: 8px 0;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+.header-shop{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.header-search{
+    flex: 1;
+    max-width: 70%;
+}
+.list-action-user ul{
+    padding: 0;
+    margin: 0;
+    background-color: #25D366;
+    display: none;
+}
+.header-user{
+    margin-right: 20px;
+    cursor: pointer;
+}
+.list-action-user li{
+    list-style: none;
+}
+.list-action-user li a{
+    color: white;
+    text-decoration: none;
+}
+.header-cart{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header-cart-info, .header-user{
+    background-color: #25D366;
+    border-radius: 5px;
+    padding: 2px 6px;
+}
+.header-cart-info a{
+    position: relative;
+}
+.header-cart-info span{
+    position: absolute;
+    top: -12px;
+    background-color: red;
+    font-size: 10px;
+    right: -15px;
+    border-radius: 50%;
+}
+.action-user a{
+    color: white;
+    text-decoration: none;
+}
+.slide-banner img{
+    width: 100%;
+}
+.list-category{
+    background-color: white;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+}
+.item-category{
+    padding: 17px 10px;
+    width: 120px;
+    text-align: center;
+    border-right: 1px solid #d8d8d8;
+}
+.item-category:first-child{
+    border-left: 1px solid #d8d8d8;
+}
+.item-category a{
+    text-decoration: none;
+    color: black;
+}
+.item-category img{
+    width: 50px;
+    object-fit: cover;
+    aspect-ratio: 1;
+    background-color: #f5f5f5;
+    border-radius: 5px;
+    padding: 3px;
+}
+.name-category{
+    margin-top: 20px;
+    font-size: 14px;
+}
+.item-slide-tintuc img{
+    border-radius: 5px;
+    width: 100%;
+}
+.item-slide-tintuc{
+    margin: 0 15px;
+}
+.slide-sell-product-home{
+    background-color: #fff;
+    height: 100px;
+    padding: 10px;
+}
+.title-sell-product{
+    text-transform: uppercase;
+    color: pink;
+    font-weight: bold;
+}
+.title-sell-product a{
+    color: pink;
+    text-decoration: none;
+}
