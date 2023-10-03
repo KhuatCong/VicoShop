@@ -1,0 +1,155 @@
+body {
+    font-family: 'Play', sans-serif;
+}
+
+body:after {
+    display: table;
+    position: absolute;
+    right: 0;
+    bottom: 0
+}
+
+#dp_menu {
+    padding: 12px;
+    position: relative
+}
+
+#dp_menu button {
+    display: table;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    border-radius: 7px;
+    overflow: hidden;
+}
+
+#dp_menu button span {
+    display: block;
+    padding: 12px;
+    float: left;
+    width: 128px;
+    background: #0086C5;
+    color: #FFF;
+}
+
+#dp_menu button:before {
+    content: "\2261";
+    display: table;
+    width: 24px;
+    padding: 12px;
+    font-weight: bold;
+    background: #B60101;
+    color: #FFF;
+    float: right
+}
+
+#dp_menu:before,
+#dp_menu:after,
+#dp_menu ul:before,
+#dp_menu ul:after {
+    content: " ";
+    clear: both;
+    display: block;
+    width: 0;
+    height: 0
+}
+
+#dp_menu ul,
+#dp_menu li {
+    margin: 0;
+    padding: 0;
+    list-style: none
+}
+
+#dp_menu ul {
+    width: 200px;
+    background: #CCC;
+    -webkit-animation: daipho_off 0.25s both;
+    animation: daipho_off 0.25s both;
+}
+
+#dp_menu li {
+    display: block;
+    padding: 12px;
+    border-top: 1px solid #f6f6f6;
+    border-bottom: 1px solid #999;
+    text-align: center
+}
+
+#dp_menu.dp_show button {
+    border-radius: 7px 7px 0 0;
+}
+
+#dp_menu.dp_show button:before {
+    content: "\0058";
+}
+
+#dp_menu .sub-menu {
+    display: none
+}
+
+#dp_menu.dp_show ul {
+    display: block;
+    -webkit-animation: daipho_on 0.5s both;
+    animation: daipho_on 0.5s both;
+}
+
+html body:after {
+    content: "\0064\0061\0069\0070\0068\006F\002E\0063\006F\006D";
+}
+
+@keyframes daipho_off {
+    0% {
+        opacity: 1;
+        display: block
+    }
+
+    100% {
+        opacity: 0;
+        display: none;
+        -webkit-transform: translateY(50px);
+        transform: translateY(50px);
+    }
+}
+
+@-webkit-keyframes daipho_off {
+    0% {
+        opacity: 1;
+        display: block
+    }
+
+    100% {
+        opacity: 0;
+        display: none;
+        -webkit-transform: translateY(50px);
+        transform: translateY(50px);
+    }
+}
+
+@-webkit-keyframes daipho_on {
+    0% {
+        -webkit-transform: translateY(50px);
+        transform: translateY(50px);
+        opacity: 0;
+    }
+
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes daipho_on {
+    0% {
+        -webkit-transform: translateY(50px);
+        transform: translateY(50px);
+        opacity: 0;
+    }
+
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        opacity: 1;
+    }
+}

@@ -1,4 +1,5 @@
 $(function () {
+
     $('.slide-tintuc-home').slick({
         dots: false,
         speed: 500,
@@ -70,16 +71,24 @@ $(function () {
         slidesToScroll: 1,
         arrows: false,
         asNavFor: '.img-nav',
-        draggable:false
     });
     $('.img-nav').slick({
-        slidesToShow: 5,
+        slidesToShow: 2,
         slidesToScroll: 1,
         asNavFor: '.img-to',
         dots: false,
         arrows: false,
+        centerMode: true,
         focusOnSelect: true
     });
+
+    $('.too-product').slick({
+        slidesToShow: 6,
+        slidesToScroll: 1,
+        
+    });
+
+
 })
 
 if ($('#back-to-top').length) {
@@ -102,4 +111,22 @@ if ($('#back-to-top').length) {
             scrollTop: 0
         }, 400); //thời gian kéo lên top tính bằng mili giây 
     });
+
 }
+
+function cong(){
+    var x = $('#sl').val();
+        x++;
+        $('#sl').val(x);
+}
+
+function tru(){
+    var x = $('#sl').val();
+    if(x<=1){
+
+    }else{
+        x--;
+    }
+        $('#sl').val(x);
+}
+
