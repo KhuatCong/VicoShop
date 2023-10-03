@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="/asset/slick/slick.css">
     <link rel="stylesheet" href="/asset/slick/slick-theme.css">
+    <link rel="stylesheet" href="/asset/css/back-to-top.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
         integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -15,6 +16,7 @@
 </head>
 
 <body>
+    <!-- header -->
     <header>
         <div class="container">
             <div class="header-shop">
@@ -132,21 +134,27 @@
     </div>
     <!-- slide tin tức mới nhất -->
     <div class="container mt-4">
-        <div class="slide-tintuc-home">
-            <div class="item-slide-tintuc">
-                <a href="">
-                    <img src="/asset/img/slide-tintuc/slide1.jpg" alt="">
-                </a>
+        <div class="row slide-tintuc-home">
+            <div class="col-sm-4">
+                <div class="item-slide-tintuc">
+                    <a href="">
+                        <img src="/asset/img/slide-tintuc/slide1.jpg" alt="">
+                    </a>
+                </div>
             </div>
-            <div class="item-slide-tintuc">
-                <a href="">
-                    <img src="/asset/img/slide-tintuc/slide2.jpg" alt="">
-                </a>
+            <div class="col-sm-4">
+                <div class="item-slide-tintuc">
+                    <a href="">
+                        <img src="/asset/img/slide-tintuc/slide2.jpg" alt="">
+                    </a>
+                </div>
             </div>
-            <div class="item-slide-tintuc">
-                <a href="">
-                    <img src="/asset/img/slide-tintuc/slide3.jpg" alt="">
-                </a>
+            <div class="col-sm-4">
+                <div class="item-slide-tintuc">
+                    <a href="">
+                        <img src="/asset/img/slide-tintuc/slide3.jpg" alt="">
+                    </a>
+                </div>
             </div>
         </div>
     </div>
@@ -157,16 +165,499 @@
                 <div class="title-sell-product">
                     Sản phẩm bán chạy
                 </div>
-                <a class="" href="">Xem tất cả<i class="fa-solid fa-angle-right"></i></a>
+                <a class="xem-them" href="">Xem tất cả<i class="fa-solid fa-angle-right"></i></a>
             </div>
-
-            <div class="item-product-sell">
-                <div class="img">
-
+            <div class="list-item-product-sell">
+                <div class="item-product-sell">
+                    <div class="img">
+                        <a href="/client/detail-product.html">
+                            <img src="/asset/img/product/sell/sell1.jpeg" alt="">
+                        </a>
+                    </div>
+                    <div class="body">
+                        <a href="/client/detail-product.html">
+                            Áo cộc tay
+                        </a>
+                        <div class="price">
+                            100,000 đ
+                        </div>
+                    </div>
+                </div>
+                <div class="item-product-sell">
+                    <div class="img">
+                        <a href="">
+                            <img src="/asset/img/product/sell/sell2.jpeg" alt="">
+                        </a>
+                    </div>
+                    <div class="body">
+                        <a href="">
+                            Áo cộc tay
+                        </a>
+                        <div class="price">
+                            100,000 đ
+                        </div>
+                    </div>
+                </div>
+                <div class="item-product-sell">
+                    <div class="img">
+                        <a href="">
+                            <img src="/asset/img/product/sell/sell3.jpeg" alt="">
+                        </a>
+                    </div>
+                    <div class="body">
+                        <a href="">
+                            Áo cộc tay
+                        </a>
+                        <div class="price">
+                            100,000 đ
+                        </div>
+                    </div>
+                </div>
+                <div class="item-product-sell">
+                    <div class="img">
+                        <a href="">
+                            <img src="/asset/img/product/sell/sell4.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="body">
+                        <a href="">
+                            Áo cộc tay
+                        </a>
+                        <div class="price">
+                            100,000 đ
+                        </div>
+                    </div>
+                </div>
+                <div class="item-product-sell">
+                    <div class="img">
+                        <a href="">
+                            <img src="/asset/img/product/sell/sell5.jpeg" alt="">
+                        </a>
+                    </div>
+                    <div class="body">
+                        <a href="">
+                            Áo cộc tay
+                        </a>
+                        <div class="price">
+                            100,000 đ
+                        </div>
+                    </div>
+                </div>
+                <div class="item-product-sell">
+                    <div class="img">
+                        <a href="">
+                            <img src="/asset/img/product/sell/sell5.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="body">
+                        <a href="">
+                            Áo cộc tay
+                        </a>
+                        <div class="price">
+                            100,000 đ
+                        </div>
+                    </div>
+                </div>
+                <div class="item-product-sell">
+                    <div class="img">
+                        <a href="">
+                            <img src="/asset/img/product/sell/sell3.jpeg" alt="">
+                        </a>
+                    </div>
+                    <div class="body">
+                        <a href="">
+                            Áo cộc tay
+                        </a>
+                        <div class="price">
+                            100,000 đ
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
+
+    <section class="product-home py-4">
+        <div class="title-product-home">
+            Shopping ngay hôm nay
+        </div>
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-2 col-sm-3 col-6">
+                    <div class="item-product-home">
+                        <div class="img">
+                            <a href="">
+                                <img src="/asset/img/product/product1.jpeg" alt="">
+                            </a>
+                        </div>
+                        <div class="body">
+                            <a href="" class="name">
+                                Quần ngủ đông
+                            </a>
+                            <div class="price">
+                                120,000 đ
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-sm-3 col-6">
+                    <div class="item-product-home">
+                        <div class="img">
+                            <a href="">
+                                <img src="/asset/img/product/product2.jpeg" alt="">
+                            </a>
+                        </div>
+                        <div class="body">
+                            <a href="">
+                                Quần ngủ đông
+                            </a>
+                            <div class="price">
+                                120,000 đ
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-sm-3 col-6">
+                    <div class="item-product-home">
+                        <div class="img">
+                            <a href="">
+                                <img src="/asset/img/product/product3.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="body">
+                            <a href="">
+                                Quần ngủ đông
+                            </a>
+                            <div class="price">
+                                120,000 đ
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-sm-3 col-6">
+                    <div class="item-product-home">
+                        <div class="img">
+                            <a href="">
+                                <img src="/asset/img/product/product4.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="body">
+                            <a href="">
+                                Quần ngủ đông
+                            </a>
+                            <div class="price">
+                                120,000 đ
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-sm-3 col-6">
+                    <div class="item-product-home">
+                        <div class="img">
+                            <a href="">
+                                <img src="/asset/img/product/product5.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="body">
+                            <a href="">
+                                Quần ngủ đông
+                            </a>
+                            <div class="price">
+                                120,000 đ
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-sm-3 col-6">
+                    <div class="item-product-home">
+                        <div class="img">
+                            <a href="">
+                                <img src="/asset/img/product/product6.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="body">
+                            <a href="">
+                                Quần ngủ đông
+                            </a>
+                            <div class="price">
+                                120,000 đ
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-sm-3 col-6">
+                    <div class="item-product-home">
+                        <div class="img">
+                            <a href="">
+                                <img src="/asset/img/product/product7.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="body">
+                            <a href="">
+                                Quần ngủ đông
+                            </a>
+                            <div class="price">
+                                120,000 đ
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-sm-3 col-6">
+                    <div class="item-product-home">
+                        <div class="img">
+                            <a href="">
+                                <img src="/asset/img/product/product8.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="body">
+                            <a href="">
+                                Quần ngủ đông
+                            </a>
+                            <div class="price">
+                                120,000 đ
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-sm-3 col-6">
+                    <div class="item-product-home">
+                        <div class="img">
+                            <a href="">
+                                <img src="/asset/img/product/product9.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="body">
+                            <a href="">
+                                Quần ngủ đông
+                            </a>
+                            <div class="price">
+                                120,000 đ
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-sm-3 col-6">
+                    <div class="item-product-home">
+                        <div class="img">
+                            <a href="">
+                                <img src="/asset/img/product/product1.jpeg" alt="">
+                            </a>
+                        </div>
+                        <div class="body">
+                            <a href="">
+                                Quần ngủ đông
+                            </a>
+                            <div class="price">
+                                120,000 đ
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-sm-3 col-6">
+                    <div class="item-product-home">
+                        <div class="img">
+                            <a href="">
+                                <img src="/asset/img/product/product10.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="body">
+                            <a href="">
+                                Quần ngủ đông
+                            </a>
+                            <div class="price">
+                                120,000 đ
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-sm-3 col-6">
+                    <div class="item-product-home">
+                        <div class="img">
+                            <a href="">
+                                <img src="/asset/img/product/product11.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="body">
+                            <a href="">
+                                Quần ngủ đông
+                            </a>
+                            <div class="price">
+                                120,000 đ
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-sm-3 col-6">
+                    <div class="item-product-home">
+                        <div class="img">
+                            <a href="">
+                                <img src="/asset/img/product/product12.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="body">
+                            <a href="">
+                                Quần ngủ đông
+                            </a>
+                            <div class="price">
+                                120,000 đ
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-sm-3 col-6">
+                    <div class="item-product-home">
+                        <div class="img">
+                            <a href="">
+                                <img src="/asset/img/product/product13.jpeg" alt="">
+                            </a>
+                        </div>
+                        <div class="body">
+                            <a href="">
+                                Quần ngủ đông
+                            </a>
+                            <div class="price">
+                                120,000 đ
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-sm-3 col-6">
+                    <div class="item-product-home">
+                        <div class="img">
+                            <a href="">
+                                <img src="/asset/img/product/product1.jpeg" alt="">
+                            </a>
+                        </div>
+                        <div class="body">
+                            <a href="">
+                                Quần ngủ đông
+                            </a>
+                            <div class="price">
+                                120,000 đ
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-sm-3 col-6">
+                    <div class="item-product-home">
+                        <div class="img">
+                            <a href="">
+                                <img src="/asset/img/product/product4.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="body">
+                            <a href="">
+                                Quần ngủ đông
+                            </a>
+                            <div class="price">
+                                120,000 đ
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-sm-3 col-6">
+                    <div class="item-product-home">
+                        <div class="img">
+                            <a href="">
+                                <img src="/asset/img/product/product13.jpeg" alt="">
+                            </a>
+                        </div>
+                        <div class="body">
+                            <a href="">
+                                Quần ngủ đông
+                            </a>
+                            <div class="price">
+                                120,000 đ
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-sm-3 col-6">
+                    <div class="item-product-home">
+                        <div class="img">
+                            <a href="">
+                                <img src="/asset/img/product/product2.jpeg" alt="">
+                            </a>
+                        </div>
+                        <div class="body">
+                            <a href="">
+                                Quần ngủ đông
+                            </a>
+                            <div class="price">
+                                120,000 đ
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center">
+                <a href="" class="page_next">Xem thêm</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <section class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5 col-md-6">
+                    <a href="">
+                        <img src="/asset/img/logo/logo.png" alt="">
+                    </a>
+                    <div class="title-logo-name">
+                        CÔNG TY CỔ PHẦN CÔNG NGHỆ TRUYỀN THÔNG VICO NEXT
+                    </div>
+                    <div class="address-footer mb-1" style="font-size: 13px;">
+                        <i class="fa-solid fa-location-dot me-2" style="color: #03A5F0;"></i> Địa chỉ: Số 27 LK11, Khu
+                        đô thị Xa La, Hà Đông, Hà Nội
+                    </div>
+                    <div class="email-footer mb-1" style="font-size: 13px;">
+                        <i class="fa-solid fa-envelope me-1" style="color: #03A5F0;"></i> Email: viconext@vico.vn
+                    </div>
+                    <div class="hotline-footer" style="font-size: 13px;">
+                        <i class="fa-solid fa-phone-volume me-2" style="color: #03A5F0;"></i>Hotline: 0918585505
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 col-6">
+                    <div class="title-lienket-footer">
+                        Liên kết nhanh
+                    </div>
+                    <ul class="ul-reset">
+                        <li><a href="">Về chúng tôi</a></li>
+                        <li><a href="">Hướng dẫn</a></li>
+                        <li><a href="">Hỏi đáp</a></li>
+                        <li><a href="">Tin tức</a></li>
+                        <li><a href="">Liên hệ</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6 col-6">
+                    <div class="title-hotro-footer">
+                        Hỗ trợ
+                    </div>
+                    <ul class="ul-reset">
+                        <li><a href="">Hướng dẫn mua hàng</a></li>
+                        <li><a href="">Chính sách vẫn chuyển</a></li>
+                        <li><a href="">Chinh sách bảo mật và đổi trả</a></li>
+                        <li><a href="">Chính sách bảo mật thông tin</a></li>
+                        <li><a href="">Điều khoản điều kiện</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="title-theodoi-footer">
+                        Theo dõi & mua hàng
+                    </div>
+                    <div class="theodoi">
+                        <i class="fa-brands fa-square-facebook" style="color: #1a6eff;"></i>
+                        <i class="fa-brands fa-youtube" style="color: #ff0000;"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- back to top  -->
+    <div id="back-to-top" title="Back to Top">&Hat;</div>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
         integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
